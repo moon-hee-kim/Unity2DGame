@@ -5629,6 +5629,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
+--- !u!114 &730305408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730305406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900a3c84e7974da19ae0882cb8df071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 5
+  maxHitPoints: 10
 --- !u!4 &730305412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2822910460124859083, guid: 1e8c36bae51b04c9691c5d224ca2ec84, type: 3}
