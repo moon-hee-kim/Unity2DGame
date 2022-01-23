@@ -4,7 +4,8 @@ using UnityEngine;
 
 public abstract class Character : MonoBehaviour
 {
-    public int hitPoints; // 체력
-    public int maxHitPoints; // 체력 최대값
+    public HitPoints hitPoints; // 체력
+    public float maxHitPoints; // 체력 최대값
+    public float startingHitPoints; // 최초 체력값
     
 }
