@@ -4,8 +4,20 @@ using UnityEngine;
 
 public abstract class Character : MonoBehaviour
 {
-    public HitPoints hitPoints; // 체력
     public float maxHitPoints; // 체력 최대값
     public float startingHitPoints; // 최초 체력값
     
+    public enum CharacterCategory
+    {
+        PLAYER,
+        ENEMY
+    }
+    
+    public virtual void KillCharacter()
+    {
+    	Destroy(gameObject);
+    }
+ 
+    public abstract void ResetCharacter();
+    public abstract IEnumerator DamageCharacter(int damage, float interval);    
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Player : Character
@@ -5,19 +6,17 @@ public class Player : Character
     public Inventory inventoryPrefab;
     Inventory inventory;
 
+    public HitPoints hitPoints;
+
     public HealthBar healthBarPrefab;
     HealthBar healthBar;
 
-    public void Start()
-	{
-	    inventory = Instantiate(inventoryPrefab);
-	    
-        hitPoints.value = startingHitPoints;
-        healthBar = Instantiate(healthBarPrefab);
-        healthBar.character = this;
-	}
+    private void OnEnable()
+    {
+        ResetCharacter();
+    }
 
-	void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("CanBePickedUp"))
         {
@@ -52,10 +51,47 @@ public class Player : Character
         if (hitPoints.value < maxHitPoints)
         {
             hitPoints.value = hitPoints.value + amount;
-            print("Adjusted HP by: " + amount + ". New value: " + hitPoints.value);
             return true;
         }
-        print("didnt adjust hitpoints");
         return false;
+    }
+
+    public override IEnumerator DamageCharacter(int damage, float interval)
+    {
+        while (true)
+        {
+            hitPoints.value = hitPoints.value - damage;
+
+            if (hitPoints.value <= float.Epsilon)
+            {
+                KillCharacter();
+                break;
+            }
+
+            if (interval > float.Epsilon)
+            {
+                yield return new WaitForSeconds(interval);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    public override void KillCharacter()
+    {
+        base.KillCharacter();
+        Destroy(healthBar.gameObject);
+        Destroy(inventory.gameObject);
+    }
+
+    public override void ResetCharacter()
+    {
+        inventory = Instantiate(inventoryPrefab);
+        healthBar = Instantiate(healthBarPrefab);
+        healthBar.character = this;
+
+        hitPoints.value = startingHitPoints;
     }
 }
