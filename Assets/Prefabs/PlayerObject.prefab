@@ -182,4 +182,4 @@ MonoBehaviour:
   maxHitPoints: 10
   startingHitPoints: 6
   inventoryPrefab: {fileID: 7062731796974206051, guid: a7b5a58ce9a16405b93475d0cc15abfa, type: 3}
-  healthBarPrefab: {fileID: 9162685174325902557, guid: c8262a1d6e53047f88d72da437772d9f, type: 3}
+  healthBarPrefab: {fileID: 0}
