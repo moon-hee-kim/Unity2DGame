@@ -117,7 +117,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -166,9 +166,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27e7a24e206d4873bbba342cd6191d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 2
-  startingHitPoints: 2
-  characterCategory: 0
+  maxHitPoints: 4
+  startingHitPoints: 4
+  characterCategory: 1
   damageStrength: 1
 --- !u!58 &2751481997473343332
 CircleCollider2D:
