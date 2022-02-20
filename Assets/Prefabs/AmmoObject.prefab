@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5977254328247043623}
   - component: {fileID: 5977254328247043620}
   - component: {fileID: 723776737166918898}
+  - component: {fileID: -6188137834969754148}
   m_Layer: 9
   m_Name: AmmoObject
   m_TagString: Untagged
@@ -113,3 +114,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageInflicted: 1
+--- !u!114 &-6188137834969754148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977254328247043621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6514f51e5cd244b90bf75a47847bf90d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

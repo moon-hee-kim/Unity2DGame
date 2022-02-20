@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1501143566720259742}
   - component: {fileID: 730305407}
   - component: {fileID: 730305408}
-  - component: {fileID: 7499555046057468897}
+  - component: {fileID: 8167889406119049231}
   m_Layer: 6
   m_Name: PlayerObject
   m_TagString: Player
@@ -184,7 +184,7 @@ MonoBehaviour:
   inventoryPrefab: {fileID: 7062731796974206051, guid: a7b5a58ce9a16405b93475d0cc15abfa, type: 3}
   hitPoints: {fileID: 11400000, guid: cb7a786db40e44e61b4342cef78dbb3a, type: 2}
   healthBarPrefab: {fileID: 9162685174325902557, guid: c8262a1d6e53047f88d72da437772d9f, type: 3}
---- !u!114 &7499555046057468897
+--- !u!114 &8167889406119049231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,3 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3c2e7966981488aba5e668419b2e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoPrefab: {fileID: 5977254328247043621, guid: 312c28b37f30e489493ef7975374487e, type: 3}
+  poolSize: 7
+  weaponVelocity: 2
