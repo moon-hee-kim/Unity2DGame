@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public abstract class Character : MonoBehaviour
 {
     public float maxHitPoints; // 체력 최대값
@@ -12,6 +13,8 @@ public abstract class Character : MonoBehaviour
         PLAYER,
         ENEMY
     }
+    
+    public CharacterCategory characterCategory;
     
     public virtual void KillCharacter()
     {
@@ -24,7 +27,6 @@ public abstract class Character : MonoBehaviour
     public virtual IEnumerator FlickerCharacter()
     {
         GetComponent<SpriteRenderer>().color = Color.red;
-        
         yield return new WaitForSeconds(0.1f);
         
         GetComponent<SpriteRenderer>().color = Color.white;

@@ -17,14 +17,16 @@ public class Enemy : Character
     public override void ResetCharacter()
     {
         hitPoints = startingHitPoints;
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public override IEnumerator DamageCharacter(int damage, float interval)
     {
+        
         while (true)
         {
             StartCoroutine(FlickerCharacter());
-            
+
             hitPoints = hitPoints - damage;
 
             if (hitPoints <= float.Epsilon)

@@ -32,7 +32,7 @@ public class Weapon : MonoBehaviour
 	    }
 	}
 	
-	public GameObject SpawnAmmo(Vector3 location)
+	GameObject SpawnAmmo(Vector3 location)
 	{
 	    foreach (GameObject ammo in ammoPool)
 	    {

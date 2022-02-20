@@ -7,10 +7,9 @@ public class Arc : MonoBehaviour
     public IEnumerator TravelArc(Vector3 destination, float duration)
     {
         var startPosition = transform.position;
-        
         var percentComplete = 0.0f;
         
-        while (percentComplete < 1.0f)
+        while (percentComplete <= 1.0f)
         {
             percentComplete += Time.deltaTime / duration;
             
