@@ -9,18 +9,7 @@ public class MovementController : MonoBehaviour
 
     Animator animator;
 
-    string animationState = "AnimationState";
     Rigidbody2D rb2D;
-
-    enum CharStates
-    {
-        walkEast = 1,
-        walkSouth = 2,
-        walkWest = 3,
-        walkNorth = 4,
-
-        idleSouth = 5
-    }
 
     private void Start()
     {
