@@ -817,3 +817,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1086.551119 seconds.
+  path: Assets/Sprites/Player/PlayerFight32x32.png
+  artifactKey: Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/PlayerFight32x32.png using Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f355938d17c12e6ac8f01d2f4237b5b3') in 0.905048 seconds 
+  Import took 0.916175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.639394 seconds.
+  path: Assets/Sprites/Player/PlayerFight32x32.png
+  artifactKey: Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/PlayerFight32x32.png using Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e99f72856f3c7bcd0ea64f1f545a2c5') in 0.026705 seconds 
+  Import took 0.032667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.233224 seconds.
+  path: Assets/Sprites/Player/PlayerFight32x32.png
+  artifactKey: Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/PlayerFight32x32.png using Guid(789f98b0424374219a33be320b85cec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e7e6460f9fa703d5e511d5ab9b9e0c') in 0.090165 seconds 
+  Import took 0.094983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 466.024684 seconds.
+  path: Assets/Animations/Animations/player-fire-east.anim
+  artifactKey: Guid(ae9b229c0023b4d04ac316cfac04e0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Animations/player-fire-east.anim using Guid(ae9b229c0023b4d04ac316cfac04e0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85af44f3d07632a2e8ecf4d0d8a7124e') in 0.010849 seconds 
+  Import took 0.015372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.491067 seconds.
+  path: Assets/Animations/Animations/player-fire-north.anim
+  artifactKey: Guid(9a1ed13e9e4334f31b95ccf64852cf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Animations/player-fire-north.anim using Guid(9a1ed13e9e4334f31b95ccf64852cf66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6cb6d8ea7adce6134875004bc88ad6') in 0.010329 seconds 
+  Import took 0.014770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.694956 seconds.
+  path: Assets/Animations/Animations/player-fire-west.anim
+  artifactKey: Guid(a1bdb0db8177444b497f1bf33ed734cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Animations/player-fire-west.anim using Guid(a1bdb0db8177444b497f1bf33ed734cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920bed0a48c551f94791bfc14ccfa4c3') in 0.006560 seconds 
+  Import took 0.011436 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.761686 seconds.
+  path: Assets/Animations/Animations/player-fire-south.anim
+  artifactKey: Guid(dca1dca3390cf4a49bb81c1952c01504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Animations/player-fire-south.anim using Guid(dca1dca3390cf4a49bb81c1952c01504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b537275fe56d076b0fcd6388ac9d252') in 0.010312 seconds 
+  Import took 0.014921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.779091 seconds.
+  path: Assets/Animations/Controllers/PlayerController.controller
+  artifactKey: Guid(17319d9aa963849bcbfd57947688afe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Controllers/PlayerController.controller using Guid(17319d9aa963849bcbfd57947688afe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaca2e6290cd126bbadc1be5cb3b9acd') in 0.012622 seconds 
+  Import took 0.017016 seconds .
+

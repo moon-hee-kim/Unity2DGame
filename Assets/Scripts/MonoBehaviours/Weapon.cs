@@ -2,12 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Weapon : MonoBehaviour
 {
 	public GameObject ammoPrefab;
 	static List<GameObject> ammoPool;
 	public int poolSize;
 	public float weaponVelocity;
+	
+	bool isFiring;
+	[HideInInspector]
+	public Animator animator;
+	
+	Camera localCamera;
+	
+	float positiveSlope;
+	float negativeSlope;
+	
+	enum Quadrant
+	{
+	    East,
+	    South,
+	    West,
+	    North
+	}
+	
+	void Start()
+	{
+	    animator = GetComponent<Animator>();
+	    isFiring = false;
+	    localCamera = Camera.main;
+	}
 	
 	void Awake()
 	{
@@ -28,8 +53,11 @@ public class Weapon : MonoBehaviour
 	{
 	    if (Input.GetMouseButtonDown(0))
 	    {
+	        isFiring = true;
 	        FireAmmo();
 	    }
+	    
+	    UpdateState();
 	}
 	
 	GameObject SpawnAmmo(Vector3 location)
