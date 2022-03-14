@@ -881,3 +881,4 @@ Received Import Request.
 Start importing Assets/Animations/Controllers/PlayerController.controller using Guid(17319d9aa963849bcbfd57947688afe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaca2e6290cd126bbadc1be5cb3b9acd') in 0.012622 seconds 
   Import took 0.017016 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

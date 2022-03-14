@@ -43,7 +43,7 @@ public class Weapon : MonoBehaviour
 	    negativeSlope = GetSlope(upperLeft, lowerRight);
 	}
 	
-	bool HigherThanPositiveSlopeLine()
+	bool HigherThanPositiveSlopeLine(Vector2 inputPosition)
 	{
 	    Vector2 playerPosition = gameObject.transform.position;
 	    Vector2 mousePosition = localCamera.ScreenToWorldPoint(inputPosition);
@@ -53,6 +53,17 @@ public class Weapon : MonoBehaviour
 	    
 	    return inputIntercept > yIntercept;
 	}
+	
+    bool HigherThanNegativeSlopeLine(Vector2 inputPosition)
+    {
+        Vector2 playerPosition = gameObject.transform.position;
+        Vector2 mousePosition = localCamera.ScreenToWorldPoint(inputPosition);
+
+        float yIntercept = playerPosition.y - (negativeSlope * playerPosition.x);
+        float inputIntercept = mousePosition.y - (negativeSlope * mousePosition.x);
+
+        return inputIntercept > yIntercept;
+    }	
 	
 	Quadrant GetQuadrant()
     {
